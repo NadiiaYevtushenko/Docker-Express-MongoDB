@@ -1,0 +1,110 @@
+/* ========= Base Reset ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========= Root ========= */
+:root {
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========= Light Theme ========= */
+body[data-theme="light"] {
+    --bg-color: #f9f9f9;
+    --text-color: #222;
+    --accent-color: #007acc;
+    --footer-bg: #f1f1f1;
+}
+
+/* ========= Dark Theme ========= */
+body[data-theme="dark"] {
+    --bg-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --accent-color: #66ccff;
+    --footer-bg: #2a2a2a;
+}
+
+/* ========= Body ========= */
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 1rem;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========= Typography ========= */
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ========= Layout ========= */
+header {
+    padding: 1rem 0;
+    border-bottom: 2px solid #ddd;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+}
+
+/* ========= Button for Theme ========= */
+#toggle-theme {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-theme:hover {
+    background-color: #005f99;
+}
+
+/* ========= Image ========= */
+img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* ========= Footer ========= */
+footer {
+    background-color: var(--footer-bg);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #ccc;
+}

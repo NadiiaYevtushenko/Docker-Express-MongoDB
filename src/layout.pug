@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title My App
+    link(rel="icon", href="/icons/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="/styles/style.css")
+
+  body(data-theme=theme)
+    header
+      h1 My App
+      button#toggle-theme Toggle Theme
+
+    main
+      p Welcome to my App
+      img(src="/images/picLogo.png", alt="Logo of My App", loading="lazy")
+
+    footer
+      p &copy; #{year} My App. All rights reserved.
+
+    script(src="/scripts/theme.js")
